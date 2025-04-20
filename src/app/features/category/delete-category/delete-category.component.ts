@@ -17,6 +17,8 @@ export class DeleteCategoryComponent implements OnInit {
     private router: Router
   ) {}
 
+  //ngoninit lifecycle hook to get the category ID from the route parameters
+
   ngOnInit(): void {
     const idParam = this.route.snapshot.paramMap.get('id');
     if (idParam) {
