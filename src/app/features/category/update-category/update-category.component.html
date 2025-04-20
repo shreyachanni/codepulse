@@ -1,0 +1,18 @@
+<div class="container">
+    <h2>Update Category</h2>
+    <form (ngSubmit)="updateCategory()">
+      <div class="mb-3">
+        <label for="categoryName" class="form-label">Category Name</label>
+        <input type="text" id="categoryName" [(ngModel)]="category.Name" name="name" class="form-control" required>
+      </div>
+  
+      <div class="mb-3">
+        <label for="urlHandle" class="form-label">URL Handle</label>
+        <input type="text" id="urlHandle" [(ngModel)]="category.UrlHandle" name="urlHandle" class="form-control" required>
+      </div>
+  
+      <button type="submit" class="btn btn-primary">Update</button>
+      <a [routerLink]="['/admin/categories']" class="btn btn-secondary">Cancel</a>
+    </form>
+  </div>
+  
